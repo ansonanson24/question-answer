@@ -1,2 +1,3 @@
-<p style="white-space: pre;">{{text}}</p>
-<button (click)="onQuestion()">{{ btnText }}</button>
+<p style="white-space: pre;">{{ text }}</p>
+<button (click)="onQuestion()">{{ question? "Answer?" : "Again!" }}</button>
+<button [routerLink]="['/test']">test</button>
